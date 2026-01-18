@@ -1,0 +1,21 @@
+{
+  "name": "gemini-designs",
+  "version": "1.0.0",
+  "description": "Gemini Designs - Pastel solarpunk farmhouse style design business",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [
+    "gemini-designs",
+    "farmhouse",
+    "solarpunk",
+    "design"
+  ],
+  "author": "Maria Rojas",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
