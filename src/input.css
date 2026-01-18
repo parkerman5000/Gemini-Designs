@@ -8,75 +8,18 @@
   }
 
   body {
-    @apply font-body text-gray-700 antialiased;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    @apply font-body text-charcoal bg-cream;
   }
 }
 
 @layer components {
-  .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-pastel-pink-400 to-pastel-purple-400 text-white font-medium rounded-full shadow-soft hover:shadow-card transition-all duration-300 hover:scale-105;
+  /* Floral SVG background pattern */
+  .floral-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c0 0-5 10-5 15s5 10 5 10 5-5 5-10-5-15-5-15z' fill='none' stroke='%23D4A5A5' stroke-width='0.5' opacity='0.3'/%3E%3C/svg%3E");
   }
 
-  .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-white border-2 border-pastel-pink-300 text-pastel-pink-600 font-medium rounded-full hover:bg-pastel-pink-50 transition-all duration-300;
-  }
-
-  .card {
-    @apply bg-white/80 backdrop-blur-sm rounded-2xl shadow-card p-6 hover:shadow-soft transition-shadow duration-300;
-  }
-
-  .nav-link {
-    @apply text-gray-600 hover:text-pastel-pink-500 transition-colors duration-200 font-medium;
-  }
-
-  .nav-link.active {
-    @apply text-pastel-pink-500;
-  }
-
-  .section-heading {
-    @apply font-display text-3xl md:text-4xl lg:text-5xl text-gray-800 mb-4;
-  }
-
-  .section-subheading {
-    @apply text-gray-600 text-lg max-w-2xl mx-auto;
-  }
-
-  .input-field {
-    @apply w-full px-4 py-3 rounded-xl border border-pastel-purple-200 focus:border-pastel-pink-400 focus:ring-2 focus:ring-pastel-pink-200 outline-none transition-all duration-200 bg-white/50;
-  }
-
-  .gallery-item {
-    @apply relative overflow-hidden rounded-2xl cursor-pointer;
-  }
-
-  .gallery-overlay {
-    @apply absolute inset-0 bg-gradient-to-t from-pastel-purple-900/60 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4;
-  }
-
-  .gallery-item:hover .gallery-overlay {
-    @apply opacity-100;
-  }
-}
-
-@layer utilities {
-  .text-gradient {
-    @apply bg-gradient-to-r from-pastel-pink-500 to-pastel-purple-500 bg-clip-text text-transparent;
-  }
-
-  .bg-solarpunk {
-    background: linear-gradient(135deg, #fdeef3 0%, #f3e8ff 50%, #dcfce7 100%);
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+  /* Watercolor gradient overlay */
+  .watercolor-overlay {
+    background: linear-gradient(135deg, rgba(248,232,232,0.8) 0%, rgba(212,165,165,0.3) 50%, rgba(253,248,245,0.8) 100%);
   }
 }
