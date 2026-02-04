@@ -14,6 +14,7 @@ module.exports = {
         'charcoal': '#374151',
         'mpower-blue': '#2563EB',
         'mpower-orange': '#F97316',
+        'sage': '#9CAF88',
       },
       fontFamily: {
         'script': ['"Cormorant Garamond"', 'Playfair Display', 'serif'],

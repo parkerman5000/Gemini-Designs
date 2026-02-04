@@ -22,4 +22,18 @@
   .watercolor-overlay {
     background: linear-gradient(135deg, rgba(248,232,232,0.8) 0%, rgba(212,165,165,0.3) 50%, rgba(253,248,245,0.8) 100%);
   }
+
+  /* Coming Soon badge */
+  .coming-soon-badge {
+    @apply absolute -top-2 -right-2 bg-sage text-white text-xs font-medium px-3 py-1 rounded-full shadow-sm;
+  }
+
+  /* Gallery image hover effect */
+  .gallery-item {
+    @apply w-full h-48 object-cover rounded-xl border border-rose/20 transition-all duration-300;
+  }
+
+  .gallery-item:hover {
+    @apply shadow-lg scale-[1.02];
+  }
 }
